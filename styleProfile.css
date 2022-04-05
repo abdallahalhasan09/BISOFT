@@ -1,0 +1,281 @@
+.menu {
+  position: fixed;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: first baseline;
+  flex-direction: column;
+  background-color: rgb(34 34 45 / 95%);
+  height: 100vh;
+  text-align: center;
+}
+
+/*logo css*/
+
+.menu .logo {
+  border-bottom: 1px solid grey;
+  height: 110px;
+}
+
+.menu .logo h1 {
+  font-size: 80px;
+  color: blue;
+  vertical-align: middle;
+}
+
+.menu .logo h1 span {
+  color: red;
+}
+
+.menu .logo a:hover {
+  text-decoration: none;
+}
+
+/*menu icindeki secimlerin duzeltmesi*/
+
+.menu .options {
+  text-align: left;
+}
+
+.menu .options ul {
+  list-style-type: none;
+}
+
+.menu .options ul li {
+  margin: 20px 5px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.menu .options ul li:hover {
+  background-color: rgb(34 34 45);
+  border: 1px solid grey;
+}
+
+.menu .options ul li:active {
+  background-color: black;
+  border: 2px solid grey;
+}
+
+/*header css*/
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(34 34 45 / 95%);
+  text-align: right;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+header i {
+  margin: 10px 15px;
+  color: white;
+}
+
+header i:hover {
+  color: grey;
+}
+
+/*home css*/
+
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+}
+
+.home .requestN,
+.home .messages {
+  position: relative;
+  width: 45%;
+  height: 100px;
+  font-size: 20px;
+  margin: 30px 10px;
+  letter-spacing: 2px;
+}
+
+.home .requestN {
+  background-color: rgb(8, 8, 207);
+  color: white;
+}
+
+.home .messages {
+  background-color: rgb(211, 173, 5);
+  color: black;
+}
+
+.home .requestN h2,
+.home .messages h2 {
+  font-size: 30px;
+}
+
+/*Personal Information css*/
+
+.personalclass {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 10px;
+}
+
+.personalclass h1 {
+  margin: 20px 10px;
+}
+
+.personalclass table tr {
+  height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.personalclass table th {
+  font-size: 25px;
+}
+
+.personalclass table td {
+  font-size: 23px;
+}
+
+.personalclass h4 {
+  margin: 30px;
+  margin-left: none;
+  color: darkblue;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+.edit {
+  margin: 30px;
+  float: right;
+}
+
+/*clients class css*/
+
+.clientsclass {
+  position: relative;
+  display: none;
+  margin: 15px 10px;
+}
+
+.clientsclass h1 {
+  margin: 40px 0;
+}
+
+#all,
+#finished,
+#unfinished {
+  color: rgb(9, 9, 241);
+}
+.clientsclass .row {
+  background-color: #eeeeee;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.clientsclass .foto img {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+#nav-phto {
+  width: 70px;
+  height: 70px;
+}
+
+/*i css*/
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-facebook {
+  background-color: #4267b2;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+  background: linear-gradient(
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  border-radius: 20px;
+}
+
+/*Project Class css*/
+
+.projectclass {
+  width: 80%;
+  display: none;
+}
+
+.projectclass h1 {
+  margin: 50px 0;
+}
+
+.projectclass table {
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.projectclass table th {
+  background-color: rgb(34 34 45 / 95%);
+  color: white;
+}
+
+/*earningclass*/
+
+.earningclass {
+  width: 80%;
+  display: none;
+}
+
+.earningclass table {
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.earningclass table th {
+  background-color: rgb(34 34 45 / 95%);
+  color: white;
+}
+
+.earningclass h1 {
+  margin: 50px 0;
+}
+
+/*debt class*/
+
+.debtclass {
+  display: none;
+  text-align: center;
+}
+
+.debtclass h1 {
+  margin: 50px;
+  color: red;
+}
+
+.debtclass p {
+  font-size: 25px;
+  font-weight: bold;
+  color: green;
+}

@@ -1,0 +1,125 @@
+section.showed {
+  width: 100%;
+  background-color: #043674;
+  margin: 80px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section nav {
+  position: relative;
+  background-color: #043674;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navcontainer {
+  position: relative;
+  height: 70px;
+  width: 200px;
+  background-color: white;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navcontainer div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navicons {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  transition: 0.5s;
+  color: black;
+}
+
+.navcontainer:hover div .navicons {
+  transform: translateY(-55px);
+}
+
+.navtext {
+  position: absolute;
+  color: black;
+  transition: 0.5;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.navcontainer:hover div .navtext {
+  opacity: 1;
+}
+
+#gameslide,
+#webslide,
+#androidslide,
+#databaseslide,
+#codingslide {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: white;
+}
+
+#gameslide .container,
+#webslide .container,
+#androidslide .container,
+#databaseslide .container,
+#codingslide .container {
+  background-color: #043674;
+  padding: 50px 0;
+}
+
+#gameslide div table,
+#webslide div table,
+#androidslide div table,
+#databaseslide div table,
+#codingslide div table {
+  position: relative;
+  left: 30px;
+  width: 90%;
+  margin: 20px;
+  font-size: 20px;
+  border: 1px solid grey;
+}
+
+#gameslide div table th,
+#webslide div table th,
+#androidslide div table th,
+#databaseslide div table th,
+#codingslide div table th {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#gameslide div table tr:hover,
+#webslide div table tr:hover,
+#androidslide div table tr:hover,
+#databaseslide div table tr:hover,
+#codingslide div table tr:hover {
+  background-color: #022958;
+  cursor: pointer;
+}
+
+#gameslide div table tr:active,
+#webslide div table tr:active,
+#androidslide div table tr:active,
+#databaseslide div table tr:active,
+#codingslide div table tr:active {
+  background-color: #031933;
+}

@@ -1,0 +1,435 @@
+html {
+  box-sizing: border-box;
+}
+
+.closed-menu {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(34 34 45 / 95%);
+  display: none;
+}
+
+.closed-menu .myflex {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.closed-menu .myflex1 {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.closed-menu div a {
+  height: max-content;
+  width: max-content;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.closed-menu div a:nth-child(4) {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.closed-menu div a:hover {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.closed-menu form input {
+  align-items: center;
+  margin: 30px 10px 5px 30px;
+  width: 80%;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+  color: white;
+  border: none;
+}
+
+.closed-menu form input:last-child {
+  margin: 30px 10px;
+  width: 20%;
+  font-size: 13px;
+  background-color: rgb(44, 41, 228);
+  border: none;
+  box-shadow: 0px 3px 3px 0px black;
+}
+
+.closed-menu form input:last-child:focus {
+  background-color: rgb(3, 3, 170);
+  box-shadow: none;
+}
+
+header {
+  background-color: rgb(34 34 45 / 95%);
+  margin: 0px;
+  position: relative;
+}
+
+header .myflex {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 80px;
+  color: blue;
+  float: left;
+  vertical-align: middle;
+}
+
+header h1 span {
+  color: red;
+}
+
+header p {
+  float: left;
+  font-size: 30px;
+  color: white;
+  margin: 50px 10px 10px 2px;
+}
+
+header nav {
+  float: left;
+  height: 50px;
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+}
+
+header nav a {
+  float: left;
+  padding: 15px 30px;
+  margin: 0px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+#m4 {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+
+header form input {
+  float: right;
+  margin: 30px 10px;
+  width: 70%;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+  color: white;
+  border: none;
+}
+
+header form input:last-child {
+  float: right;
+  margin: 30px 10px;
+  width: 13%;
+  font-size: 15px;
+  background-color: rgb(44, 41, 228);
+  border: none;
+  box-shadow: 0px 3px 3px 0px black;
+}
+
+header form input:last-child:focus {
+  background-color: rgb(3, 3, 170);
+  box-shadow: none;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-facebook {
+  background-color: #4267b2;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+  background: linear-gradient(
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  border-radius: 20px;
+}
+
+.fa-copyright {
+  color: white;
+}
+
+.fa-phone {
+  color: white;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.fa-times {
+  color: white;
+  border: none;
+  float: right;
+  margin-right: 15px;
+}
+
+button {
+  background: none;
+  border: none;
+  float: right;
+  display: none;
+}
+
+#icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#icons a {
+  text-decoration: none;
+}
+
+.control {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.control #login {
+  margin: 30px 0 0 0;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 20px 230px;
+  font-size: 18px;
+  background-color: white;
+  border-bottom: none;
+}
+
+.control #signup {
+  margin: 30px 0 0 0;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 20px 230px;
+  font-size: 18px;
+  border-bottom: none;
+}
+
+.control input:hover {
+  background-color: white;
+}
+
+.control .login,
+.control .signup {
+  position: relative;
+  border-top: none;
+  margin: 0;
+  width: 50%;
+  padding: 50px 15px;
+}
+
+.control .login h1,
+.control .signup {
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+.control .login #username,
+.control .login #password,
+.control .signup input {
+  width: 90%;
+  height: 60px;
+  margin: 30px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.control .signup select {
+  width: 90%;
+  height: 60px;
+  margin: 30px 10px;
+  font-size: 20px;
+}
+
+.control .signup label {
+  font-size: 35px;
+}
+
+.control .login a {
+  display: block;
+  margin: 10px;
+  color: #016480;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.control .login #google {
+  position: relative;
+  width: 80%;
+  height: 90px;
+  text-align: left;
+  font-size: 30px;
+  background-color: white;
+  border: none;
+}
+
+#abc {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#abc:hover,
+.control .login #google:hover {
+  background-color: #dddddd;
+}
+
+.fa-google {
+  color: red;
+}
+
+.login #remember {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login #loginbutton,
+.signup #submit {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #017a9b;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 5px 5px 5px #eeeeee;
+  border-radius: 10px;
+}
+
+.login #submit:hover,
+.signup #submit:hover {
+  border: 1px solid lightblue;
+  background-color: #016480;
+}
+
+.login #submit:active,
+.signup #submit:active {
+  padding: 10px;
+  border: 2px solid lightblue;
+}
+
+.signup {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(34 34 45 / 95%);
+  float: left;
+  position: relative;
+}
+
+footer .fa {
+  margin: 20px;
+}
+
+footer .fa:last-child {
+  margin-bottom: 10px;
+}
+
+footer .contact {
+  float: right;
+  font-size: 20px;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+footer .contact a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .contact a:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .fm {
+    display: none;
+  }
+  button {
+    display: block;
+  }
+  .closed-menu div a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+  header .fm {
+    display: none;
+  }
+  button {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    display: none;
+  }
+  header .fm {
+    display: none;
+  }
+  button {
+    display: block;
+  }
+}
+
+@media (max-width: 1552px) {
+  header nav a {
+    float: left;
+    padding: 5px 30px;
+    margin: 0px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+  }
+}
