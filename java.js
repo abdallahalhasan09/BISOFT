@@ -1,7 +1,7 @@
 // header toogle
 $(function () {
   $("#nav-icon").on("click", function () {
-    $("#lists").slideToggle("fast");
+    $("#lists").slideToggle("3000");
   });
 });
 // header toogle end

@@ -642,20 +642,23 @@ body {
     align-items: start;
     justify-content: space-evenly;
     height: 50%;
-    width: 20%;
+    width: 22%;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-left: 53px;
   }
   footer .sec-1 img {
     width: 25%;
     text-align: center;
+    margin-left: 20px;
+
   }
   footer .sec-1 p {
     align-items: end;
     margin-bottom: 80px;
     --bs-text-opacity: 1;
     color: var(--footer-color);
+    margin-left: 20px;
+    margin-right: 20px;
   }
   footer .sec-1 h6 {
     --bs-text-opacity: 1;
@@ -672,9 +675,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 20%;
+    width: 22%;
     margin-top: 50px;
-    margin-left: 50px;
   }
   footer .sec-2 h3 {
     color: #eff7fa;
@@ -694,9 +696,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 20%;
+    width: 22%;
     margin-top: 50px;
-    margin-left: 20px;
   }
   footer .sec-3 h3 {
     color: #eff7fa;
@@ -717,7 +718,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 20%;
+    width: 22%;
     margin-top: 50px;
   }
   footer .sec-4 h3 {
@@ -725,11 +726,24 @@ body {
     margin-bottom: 20px;
     text-align: center;
   }
-  
+  footer .sec-4 .create{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .sec-4 h6{
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
   footer .sec-4 p {
     color: var(--footer-color);
     margin-bottom: 20px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
   }
   
   footer .sec-4 a {
@@ -764,13 +778,7 @@ body {
     footer .sec-3,
     footer .sec-4 {
       width: 40%;
-    }
-    footer .sec-4 {
-      margin-left: 50px;
-    }
-    footer .sec-3 {
-      margin-left: 53px;
-    }
+
   }
   
   @media (max-width: 580px) {
