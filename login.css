@@ -1,0 +1,295 @@
+/* globals  */
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #017a9b;
+    --mainMargin: 25px;
+}
+
+/* globals end  */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* small  */
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium  */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large  */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+}
+/* nav */
+    
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+nav .logo img {
+    width:100px;
+
+}
+/* nav  */
+/* start parent  */ 
+.parent .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .parent .container {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.parent .container .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.parent .container .buttons label {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.parent .container .buttons label:first-child {
+    border-right: 1px solid black;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+}
+
+.parent .container .buttons label:nth-child(2) {
+    border-top-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .parent .container .buttons label{
+        font-size: 25px;
+        padding: 15px;
+        font-weight: 600;
+    }
+}
+
+.parent .container .buttons label:hover {
+    background-color: #eee;
+}
+
+.parent .container .buttons label:active {
+    background-color: #ccc;
+}
+
+.parent .container .log-in-containt,
+.parent .container .sign-up-containt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 100px 0;
+}
+
+.parent .container .sign-up-containt {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt,
+    .parent .container .sign-up-containt {
+        font-size: 18px;
+    }
+}
+
+.parent .container #log:checked + .sign-up-containt ,
+.parent .container #sign:checked + .log-in-containt {
+    display: none;
+}
+
+.parent .container .log-in-containt h2,
+.parent .container .sign-up-containt h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt h2,
+    .parent .container .sign-up-containt h2 {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.parent .container .log-in-containt .with-log,
+.parent .container .sign-up-containt .with-sign {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 10px;
+    border: 2px solid black;
+
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt .with-log,
+    .parent .container .sign-up-containt .with-sign {
+        padding: 15px;
+        font-size: 25px;
+}
+}
+
+
+
+.parent .container .log-in-containt .with-log:hover,
+.parent .container .sign-up-containt .with-sign:hover {
+    background-color: #eee;
+}
+
+.parent .container .log-in-containt .with-log:active,
+.parent .container .sign-up-containt .with-sign:active {
+    background-color: #ccc;
+}
+
+
+.parent .container .log-in-containt .with-log h3,
+.parent .container .sign-up-containt .with-sign h3 {
+    word-spacing: -7.5px;
+}
+
+.parent .container .log-in-containt .with-log i,
+.parent .container .sign-up-containt .with-sign i {
+    color: #DB4437;
+}
+
+.parent .container .log-in-containt input,
+.parent .container .sign-up-containt input,
+.parent .container .sign-up-containt select {
+    display: block;
+    width: 80%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin: var(--mainMargin) 0;
+    border-width: 0.5px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt input,
+    .parent .container .sign-up-containt input {
+        padding: 10px;
+    }
+}
+
+.parent .container .log-in-containt input:hover,
+.parent .container .sign-up-containt input:hover {
+    background-color: #eee;
+}
+
+.parent .container .log-in-containt input:focus,
+.parent .container .sign-up-containt input:focus {
+    background-color: #ddd;
+    border-width: 1px;
+}
+
+.parent .container .log-in-containt .log-in,
+.parent .container .sign-up-containt .sign-up {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    margin: var(--mainMargin) 0;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt .log-in,
+    .parent .container .sign-up-containt .sign-up {
+        width: 30%;
+    }
+}
+
+.parent .container .log-in-containt .log-in:hover,
+.parent .container .sign-up-containt .sign-up:hover {
+    background-color: #006a87;
+}
+
+.parent .container .log-in-containt .log-in:active,
+.parent .container .sign-up-containt .sign-up:active {
+    background-color: #005b74;
+}
+
+.parent .container .log-in-containt a {
+    font-size: 20px;
+    color: var(--mainColor);
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.parent .container .log-in-containt a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .parent .container .log-in-containt a {
+        font-size: 17px;
+        word-spacing: -4px;
+    }
+}
+/* end parent  */

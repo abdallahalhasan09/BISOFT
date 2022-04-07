@@ -1,571 +1,775 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BSOFT</title>
-        <link rel="stylesheet" type="text/css" href="styleProfile.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-        </script>
-        <script src="scriptProfile.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- normalize css  -->
+        <link rel="stylesheet" href="normalize.css">
+        <!-- fontawesom  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+            rel="stylesheet"
+        />
+        <!-- sayfa style  -->
+        <link rel="stylesheet" href="profile.css">
     </head>
-    
     <body>
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2">
-                <div class="menu">
-                    <div class="logo">
-                    <a href="" id="home"><img src="images/LogoMakr-8NoX9G.png" alt=""  id="nav-phto">
-                    </a>
+        
+        <!-- start header  -->
+        <header>
+            <div class="container">
+                <div class="logo" id="to-main">
+                    <img src="LogoMakr-8NoX9G.png" alt="">
+                </div>
+                <div class="select">
+                    <a href="indexafterlogin.html"><i class="fa-solid fa-house-chimney"></i></a>
+                    <div class="bell">
+                            <i class="fa-solid fa-bell"></i>
+                            <!-- <ul>
+                                <li>You have a new request</li>
+                                <li>You have a new 3 requests</li>
+                                <li>You have a new messages <i class="fa-solid fa-envelope"></i></li>
+                                <li>You have a new messages <i class="fa-solid fa-envelope"></i></li>
+                                <li>You have a new messages <i class="fa-solid fa-envelope"></i></li>
+                            </ul> -->
                     </div>
-                    <hr>
-                    <div class="options">
-                        <ul>
-                            <li id="personal">Personal Information</li>
-                            <li id="clients">Clients</li>
-                            <li id="projects">My Projects</li>
-                            <li id="earnings">Earnings</li>
-                            <li id="debts">Debts</li>
-                            <li class="Signout">Sign Out</li>
-                        </ul>
-                    </div>
+                    <i class="fa-solid fa-bars" id="menu"></i>
                 </div>
             </div>
-            <div class="col-lg-10">
-                <header>
-                    <a href="/indexes/index.html" title="HOME"><i class="fa fa-home fa-2x"></i></a>
-                    <a href="" title="NOTIFICATIONS" id="notification"><i class="fa fa-bell fa-2x"></i></a>
-                </header>
+        </header>
+        <!-- end header  -->
 
-                <div class="home">
-                    <div class="requestN">
-                        <h2>REQUESTS</h2>
-                        <p>You Dont Have Any New Request</p>
+        <!-- start hidden nav  -->
+        <nav class="hidden">
+            <ul>
+                <li id="personal-information"><a href="#">Personal Information</a></li>
+                <li id="clients"><a href="#">Clients</a></li>
+                <li id="my-projects"><a href="#">My Projects</a></li>
+                <li id="sign-out"><a href="firstindex.html">Sign Out</a></li>
+            </ul>
+        </nav>
+        <!-- end hidden nav  -->
+
+        <!-- start main  -->
+        <!-- <div class="container">
+            <div class="main">
+                <div class="requests">
+                    <h1>Requests</h1>
+                    <p>You dont have any new requests</p>
+                </div>
+                <div class="messages">
+                    <h1>Messages</h1>
+                    <p>You dont have any new messages</p>
+                </div>
+            </div>
+            <div class="projelerim">
+                
+            </div>
+        </div> -->
+
+        <div class="container message-section" id="message-section">
+            <h1>All messages</h1>
+            <div class="tools">
+                <i class="fa-solid fa-arrow-rotate-right fa-2x" title="Relode"></i>
+                <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
                     </div>
-                    <div class="messages">
-                        <h2>MESSAGES</h2>
-                        <p>You Dont Have Any New Message</p>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <input type="checkbox" title="Select">
+                        <i class="fa-solid fa-star" title="Add To Favorite" id="star"></i>
+                        <h3>Title</h3>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate commodi nulla velit eligendi nam deserunt incidunt officiis 
+                            laboriosam voluptatibus! Repellendus sed
+                        </p>
                     </div>
                 </div>
 
-                <div class="personalclass">
-                    <h1>USER INFORMATIONS</h1>
+            </div>
+            <button>New</button>
+        </div>
+        <!-- end main  -->
+
+        <!-- start personal information  -->
+
+        <div class="container pis" id="pis">
+            <div class="personal-information">
+                <h1>Personal Informatin</h1>
+                <table class="personal-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Kais</td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>AL Husrom</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality</th>
+                        <td>Syria</td>
+                    </tr>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>11.03.2001</td>
+                    </tr>
+                    <tr>
+                        <th>Place of rezidence</th>
+                        <td>Turkey</td>
+                    </tr>
+                </table>
+                
+                <table class="contact-table">
+                    <h2>contact informations</h2>
+                    <tr>
+                        <th>Email</th>
+                        <td>kah.imbkt@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Mobile number</th>
+                        <td>53722957830</td>
+                    </tr>
+                    <tr>
+                        <th>Second mobile number</th>
+                        <td>-</td>
+                    </tr>
+                </table>
+
+                <table class="bank-table">
+                    <h2>Bank accont informations</h2>
+                    <tr>
+                        <th>Bank name</th>
+                        <td>Ziraat bankasi</td>
+                    </tr>
+                    <tr>
+                        <th>IBAN No</th>
+                        <td>0000 0000 0000 0000</td>
+                    </tr>
+                    <tr>
+                        <th>Bank accont name</th>
+                        <td>Kais AL Husrom</td>
+                    </tr>
+                </table>
+            </div>
+            <button style="margin-bottom: 50px;">Edit</button>
+        </div>
+
+        <!-- end personal information  -->
+        
+        <!-- start clients  -->
+        <div class="container clients-section">
+            <h1>Finished Requested</h1>
+            <div class="clients">
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
                     <table>
-                        <tr id="general">
-                            <th><img src="" alt=""></th>
-                        </tr>
                         <tr>
                             <th>Name</th>
-                            <td>Kais</td>
+                            <td>Mohammed Hattab</td>
                         </tr>
                         <tr>
-                            <th>Last Name</th>
-                            <td>Al Husrom</td>
+                            <th>Request Type</th>
+                            <td>Web site</td>
                         </tr>
                         <tr>
-                            <th>Nationality</th>
-                            <td>Syria</td>
+                            <th>Project name</th>
+                            <td>Kasper</td>
                         </tr>
                         <tr>
-                            <th>Date Of Birth</th>
-                            <td>11.03.2001</td>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
                         </tr>
                         <tr>
-                            <th>Plac Of Rezidence</th>
-                            <td>Turkey</td>
-                        </tr>
-                    </table>
-                        <h4>CONTACT INFORMATIONS</h4>
-                    <table>
-                        <tr id="conact">
                             <th>Email</th>
-                            <td>kah.imbkt@gmail.com</td>
+                            <td>mohammed@gmail.com</td>
                         </tr>
                         <tr>
-                            <th>Mobile Number</th>
-                            <td>5372957830</td>
-                        </tr>
-                        <tr >
-                            <th>Second Mobile Number</th>
-                            <td>-</td>
+                            <th>Social media</th>
+                            <td>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
                         </tr>
                     </table>
-                            <h4>BANK ACCONT INFORMATIONS</h4>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                    </div>
+                </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
                     <table>
-                        <tr id="Bank">
-                            <th>Bank Name</th>
-                            <td>Ziraat</td>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
                         </tr>
                         <tr>
-                            <th>IBAN No</th>
-                            <td>0000 0000 0000 0000 0000</td>
+                            <th>Request Type</th>
+                            <td>Web site</td>
                         </tr>
                         <tr>
-                            <th>Bank Accont Name</th>
-                            <td>Kais Al Husrom</td>
-                        </tr>
-
-                    </table>
-                    <div class="edit">
-                        <button class="btn btn-primary btn-lg">Edit</button>
-                    </div>
-                </div>
-
-                <div class="clientsclass container">
-                    <h1 id="all">All The Clients</h1>
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div>  
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <h1 id="finished">Finished Requests</h1>
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <h1 id="unfinished">Unfinished Requests</h1>
-                    <div class="row">
-                        <div class="foto col-lg-2">
-                            <img src="/galleri/human.svg" alt="" id="ffonder">
-                        </div>
-                        <div class="clientinformation col-lg-12">
-                            <table border="1px">
-                            <tr>
-                                <th>NAME</th>
-                                <td>Ahmet Kaya</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>26</td>
-                            </tr>
-                            <tr>
-                                <th>Nationality</th>
-                                <td>Turkey</td>
-                            </tr>
-                            <tr>
-                                <th>Request</th>
-                                <td>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ab iusto maxime delectus alias,
-                                    sed dolorem sapiente cumque consequuntur quo, nesciunt 
-                                    aspernatur eius, eveniet commodi enim vel repudiandae
-                                    earum itaque eligendi?</td>
-                            </tr>
-                            </table>    
-                        </div>
-                        <div class="contact col-lg-12">
-                            <table>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>Ahmet@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>Social Media</th>
-                                    <td>
-                                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>  
-                    </div> 
-                    <div class="add">
-                        <button class="btn btn-primary btn-lg">Add A Client</button>
-                        <button class="btn btn-primary btn-lg">Edit</button>
-                    </div>
-                </div>
-
-                <div class="projectclass">
-                    <h1>My Projects</h1>
-                    <table class="table table-stripped table-hover table-condenced">
-                        <tr>
-                            <th>NO</th>
-                            <th>Name of Project</th>
-                            <th>Client</th>
-                            <th>Expiry Date</th>
-                            <th>Suggested cost</th>
-                            <th>Project Status</th>
+                            <th>Project name</th>
+                            <td>Kasper</td>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>Game</td>
-                            <td>Ahmet</td>
-                            <td>10.01.2022</td>
-                            <td>500$</td>
-                            <td>Unfinished</td>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>#######</td>
-                            <td>Ahmet</td>
-                            <td>10.11.2022</td>
-                            <td>600$</td>
-                            <td>Finished</td>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>$$$$$$</td>
-                            <td>Ahmet</td>
-                            <td>10.09.2022</td>
-                            <td>500$</td>
-                            <td>Finished</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>@@@@@@@</td>
-                            <td>Ahmet</td>
-                            <td>10.08.2022</td>
-                            <td>200$</td>
-                            <td>Finished</td>
+                            <th>Social media</th>
+                            <td>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
                         </tr>
                     </table>
-                    <div class="add">
-                        <button class="btn btn-primary btn-lg">Add A Project</button>
-                        <button class="btn btn-primary btn-lg">Edit</button>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x" ></i>
                     </div>
                 </div>
-
-                <div class="earningclass">
-                    <h1>Earnings</h1>
-                    <table class="table table-stripped table-hover">
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
                         <tr>
-                            <th>Past Month</th>
-                            <th>This Month</th>
-                            <th>Avarage</th>
-                            <th>Total</th>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
                         </tr>
                         <tr>
-                            <td>600$</td>
-                            <td>0$</td>
-                            <td>430$</td>
-                            <td>1800$</td>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td id="social">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
                         </tr>
                     </table>
-                    <div class="add">
-                        <button class="btn btn-primary btn-lg">Edit</button>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
                     </div>
                 </div>
-
-                <div class="debtclass">
-                    <h1>Debts</h1>
-                    <p>You Dont Have A Debts</p>
+            </div>
+            <h1>Unfinished projects</h1>
+            <div class="clients">
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x" ></i>
+                    </div>
                 </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td id="social">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                    </div>
+                </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x" ></i>
+                    </div>
+                </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td id="social">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                    </div>
+                </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x" ></i>
+                    </div>
+                </div>
+                <div class="client">
+                    <i class="fa-solid fa-user"></i>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Mohammed Hattab</td>
+                        </tr>
+                        <tr>
+                            <th>Request Type</th>
+                            <td>Web site</td>
+                        </tr>
+                        <tr>
+                            <th>Project name</th>
+                            <td>Kasper</td>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <td>15.05.2020</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>mohammed@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Social media</th>
+                            <td id="social">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>for details</p>
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+            <button style="margin-bottom: 50px;">Add</button>
+            <button style="margin-bottom: 50px;">Edit</button>
+        </div>
 
+        <!-- start details box  -->
+        <!-- <div class="details-box">
+            <h2>Project Name</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae aliquam magni reprehenderit quas vel beatae, non illo dolorem? 
+                Consequuntur, numquam rerum recusandae tempora ratione totam nobis id repellendus 
+                unde maxime.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae aliquam magni reprehenderit quas vel beatae, non illo dolorem? 
+                Consequuntur, numquam rerum recusandae tempora ratione totam nobis id repellendus 
+                unde maxime.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae aliquam magni reprehenderit quas vel beatae, non illo dolorem? 
+                Consequuntur, numquam rerum recusandae tempora ratione totam nobis id repellendus 
+                unde maxime.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae aliquam magni reprehenderit quas vel beatae, non illo dolorem? 
+                Consequuntur, numquam rerum recusandae tempora ratione totam nobis id repellendus 
+                unde maxime.
+            </p>
+            <div class="dates">
+                <div class="start">
+                    <h4>start date</h4>
+                    <p>15.06.2021</p>
+                </div>
+                <div class="end">
+                    <h4>start date</h4>
+                    <p>15.08.2021</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- end details box  -->
+
+        <!-- end clients  -->
+
+        <!-- start my projects  -->
+
+        <div class="container my-projects-section">
+            <h1>My Projects</h1>
+            <div class="containt">
+                <table >
+                    <tr>
+                        <th>NO</th>
+                        <th>Name of Project</th>
+                        <th>Client</th>
+                        <th>Expiry Date</th>
+                        <th>Suggested cost</th>
+                        <th>Project Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Game</td>
+                        <td>Ahmet</td>
+                        <td>10.01.2022</td>
+                        <td>500$</td>
+                        <td>Unfinished</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>#######</td>
+                        <td>Ahmet</td>
+                        <td>10.11.2022</td>
+                        <td>600$</td>
+                        <td>Finished</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$$$$$$</td>
+                        <td>Ahmet</td>
+                        <td>10.09.2022</td>
+                        <td>500$</td>
+                        <td>Finished</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>@@@@@@@</td>
+                        <td>Ahmet</td>
+                        <td>10.08.2022</td>
+                        <td>200$</td>
+                        <td>Finished</td>
+                    </tr>
+                </table>
+                <div class="buttons">
+                    <button class="">Add A Project</button>
+                    <button class="">Edit</button>
+                </div>
             </div>
         </div>
-    </div>
+        
+        <!-- end my projects  -->
+
+
+        <!-- start footer  -->
+
+        <footer>
+            <div class="container">
+                <i class="fa-solid fa-copyright"></i> Created By BSOFT TEAM 2022
+            </div>
+        </footer>
+
+        <!-- end footer  -->
 
 
 
@@ -573,7 +777,15 @@
 
 
 
-
-
+    <!-- Jquery cdn  -->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    >
+    </script>
+    <!-- login script  -->
+    <script src="profile.js"></script>
     </body>
 </html>

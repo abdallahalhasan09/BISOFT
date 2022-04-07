@@ -25,8 +25,15 @@
             <div class="lists" >
                     <ul>
                     <li><a href="#contact">Contact</a></li>
+                    <input type="text" placeholder="search here">
                     <i class="fa fa-search" aria-hidden="true"></i>
-                    <button>Profile</button>
+                    <a href="firstindex.html">
+                        <i class="fas fa-sign-in"></i>
+                    </a>
+                    <a href="indexProfile.html">
+                        <button>Profile</button>
+                    </a>
+                
                 </ul>
             </div>
             <div class="nav-icon">
@@ -35,10 +42,6 @@
                 </a>
             </div>
         </div>
-        <!-- start header  -->
-
-            <!-- end header  -->
-
     </nav>
 
     <!-- end nav  -->
@@ -78,11 +81,52 @@
         </div>
 
         <div class="add">
-            <a href="">
+            <a data-bs-toggle="modal" href="#proje" role="button">
             <h1>Add you proje</h1>
             <i class="fas fa-plus"></i>
             </a>
         </div>
+
+        <!-- start add alter -->
+        <div class="modal fade" id="proje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Proje</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <form action="" method="post">
+                        <label for="recipient-name" class="col-form-label">Proje tybe :</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                        </form>
+                        </div>
+                    <div class="mb-3">
+                    <form action="" method="post">
+                    <label for="recipient-name" class="col-form-label">Price:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                    </form>
+                    </div>
+                    <div class="mb-3">
+                        <form action="" method="post">
+                            <label for="recipient-name" class="col-form-label">Explanation:</label>
+                            <textarea class = "form-control" rows = "3"></textarea>
+                        </form>
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer" method="post">
+                <form action="">
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end add alter -->
         <div class="left-side">
             <div class="box">
                 <div class="header">
@@ -96,7 +140,7 @@
                 </div>
                 <div class="price">
                     <i class="fas fa-money-check-alt"></i>
-                    <h6>300 $</h6>
+                    <h6>375 $</h6>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequuntur 
                     facere facilis natus in error doloremque provident</p>
@@ -111,7 +155,7 @@
             <div class="box">
                 <div class="header">
                     <i class="fas fa-user"></i>
-                    <h3>Abudllah alhasan</h3>
+                    <h3>hazem </h3>
                 </div>
                 <p>Web desgin</p>
                 <div class="date">
@@ -120,7 +164,7 @@
                 </div>
                 <div class="price">
                     <i class="fas fa-money-check-alt"></i>
-                    <h6>300 $</h6>
+                    <h6>260 $</h6>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequuntur 
                     facere facilis natus in error doloremque provident</p>
@@ -135,30 +179,7 @@
             <div class="box">
                 <div class="header">
                     <i class="fas fa-user"></i>
-                    <h3>Abudllah alhasan</h3>
-                </div>
-                <p>Web desgin</p>
-                <div class="date">
-                    <i class="fas fa-calendar"></i>
-                    <span> 2022 - March - 6</span>
-                </div>
-                <div class="price">
-                    <i class="fas fa-money-check-alt"></i>
-                    <h6>300 $</h6>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequuntur 
-                    facere facilis natus in error doloremque provident</p>
-                    <button>
-                        <a data-bs-toggle="modal" href="#exampleModal" role="button">
-                            <i class="far fa-comment-alt"> inbox</i>
-                    </a>
-                </button>
-
-            </div>
-            <div class="box">
-                <div class="header">
-                    <i class="fas fa-user"></i>
-                    <h3>Abudllah alhasan</h3>
+                    <h3>Elif</h3>
                 </div>
                 <p>Web desgin</p>
                 <div class="date">
@@ -181,7 +202,7 @@
             <div class="box">
                 <div class="header">
                     <i class="fas fa-user"></i>
-                    <h3>Abudllah alhasan</h3>
+                    <h3>Yunus </h3>
                 </div>
                 <p>Web desgin</p>
                 <div class="date">
@@ -190,7 +211,30 @@
                 </div>
                 <div class="price">
                     <i class="fas fa-money-check-alt"></i>
-                    <h6>300 $</h6>
+                    <h6>200 $</h6>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequuntur 
+                    facere facilis natus in error doloremque provident</p>
+                    <button>
+                        <a data-bs-toggle="modal" href="#exampleModal" role="button">
+                            <i class="far fa-comment-alt"> inbox</i>
+                    </a>
+                </button>
+
+            </div>
+            <div class="box">
+                <div class="header">
+                    <i class="fas fa-user"></i>
+                    <h3>ilyas</h3>
+                </div>
+                <p>Web desgin</p>
+                <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span> 2022 - March - 6</span>
+                </div>
+                <div class="price">
+                    <i class="fas fa-money-check-alt"></i>
+                    <h6>400 $</h6>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil consequuntur 
                     facere facilis natus in error doloremque provident</p>
@@ -235,9 +279,9 @@
                 </div>
                 <div class="mb-3">
                     <form action="" method="post">
-                        <label for="recipient-name" class="col-form-label">Price:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                        </form>
+                        <label for="recipient-name" class="col-form-label">Message:</label>
+                        <textarea class = "form-control" rows = "3"></textarea>
+                    </form>
                 </div>
             </form>
             </div>
