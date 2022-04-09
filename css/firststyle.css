@@ -654,10 +654,18 @@ body {
   footer .sec-2 ul {
     list-style: none;
     text-align: center;
+    height:100%;
+
   }
   footer .sec-2 ul li {
     margin-top: 15px;
     color: var(--footer-color);
+  }
+  footer .sec-2 ul li a {
+    color:var(--footer-color);
+  }
+  footer .sec-2 ul li a:hover{
+    color:red;
   }
   /*  */
   
@@ -680,7 +688,12 @@ body {
     margin-top: 15px;
     color: var(--footer-color);
   }
-  
+  footer .sec-3 ul li a {
+    color:var(--footer-color);
+  }
+  footer .sec-3 ul li a:hover{
+    color:red;
+  }
   /*  */
   
   footer .sec-4 {
